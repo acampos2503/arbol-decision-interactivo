@@ -1,0 +1,124 @@
+{
+  "tipo": "pregunta",
+  "texto": "¿Está en América?",
+  "si": {
+    "tipo": "pregunta",
+    "texto": "¿El idioma principal es español?",
+    "si": {
+      "tipo": "pregunta",
+      "texto": "¿Está en América Central?",
+      "si": {
+        "tipo": "pregunta",
+        "texto": "¿Limita con Nicaragua?",
+        "si": {
+          "tipo": "respuesta",
+          "texto": "Costa Rica"
+        },
+        "no": {
+          "tipo": "respuesta",
+          "texto": "Panamá"
+        }
+      },
+      "no": {
+        "tipo": "pregunta",
+        "texto": "¿Está en América del Norte?",
+        "si": {
+          "tipo": "respuesta",
+          "texto": "México"
+        },
+        "no": {
+          "tipo": "respuesta",
+          "texto": "Colombia"
+        }
+      }
+    },
+    "no": {
+      "tipo": "pregunta",
+      "texto": "¿Tiene más de 100 millones de habitantes?",
+      "si": {
+        "tipo": "pregunta",
+        "texto": "¿Está en América del Norte?",
+        "si": {
+          "tipo": "respuesta",
+          "texto": "Estados Unidos"
+        },
+        "no": {
+          "tipo": "respuesta",
+          "texto": "Brasil"
+        }
+      },
+      "no": {
+        "tipo": "pregunta",
+        "texto": "¿Es una isla del Caribe?",
+        "si": {
+          "tipo": "respuesta",
+          "texto": "Jamaica"
+        },
+        "no": {
+          "tipo": "respuesta",
+          "texto": "Canadá"
+        }
+      }
+    }
+  },
+  "no": {
+    "tipo": "pregunta",
+    "texto": "¿Está en Europa?",
+    "si": {
+      "tipo": "pregunta",
+      "texto": "¿El idioma principal es español?",
+      "si": {
+        "tipo": "respuesta",
+        "texto": "España"
+      },
+      "no": {
+        "tipo": "pregunta",
+        "texto": "¿Tiene frontera con España?",
+        "si": {
+          "tipo": "respuesta",
+          "texto": "Francia"
+        },
+        "no": {
+          "tipo": "respuesta",
+          "texto": "Alemania"
+        }
+      }
+    },
+    "no": {
+      "tipo": "pregunta",
+      "texto": "¿Está en África?",
+      "si": {
+        "tipo": "pregunta",
+        "texto": "¿Está en el norte de África?",
+        "si": {
+          "tipo": "respuesta",
+          "texto": "Marruecos"
+        },
+        "no": {
+          "tipo": "respuesta",
+          "texto": "Sudáfrica"
+        }
+      },
+      "no": {
+        "tipo": "pregunta",
+        "texto": "¿Está en Asia?",
+        "si": {
+          "tipo": "pregunta",
+          "texto": "¿Es una isla?",
+          "si": {
+            "tipo": "respuesta",
+            "texto": "Japón"
+          },
+          "no": {
+            "tipo": "respuesta",
+            "texto": "China"
+          }
+        },
+        "no": {
+          "tipo": "respuesta",
+          "texto": "Australia"
+        }
+      }
+    }
+  }
+}
