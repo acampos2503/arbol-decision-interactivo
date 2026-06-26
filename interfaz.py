@@ -25,7 +25,7 @@ class InterfazJuego:
         # tamano de la ventana
         self.ventana.geometry("650x450")
 
-        # se carga el arbol principal de paises
+        # se carga el arbol principal
         self.arbol = ArbolDecision("data/paises.json")
 
     def iniciar(self):
@@ -47,7 +47,7 @@ class InterfazJuego:
         # titulo principal
         titulo = tk.Label(
             self.ventana,
-            text="Adivina en qué país estoy pensando",
+            text="Adivina en qué estoy pensando",
             font=("Arial", 18, "bold")
         )
         titulo.pack(pady=20)
@@ -55,8 +55,8 @@ class InterfazJuego:
         # instrucciones del juego
         instrucciones = tk.Label(
             self.ventana,
-            text="Pensá en un país y el programa intentará adivinarlo\n"
-                 "haciendo preguntas de Sí o No.",
+            text="Cargá un archivo JSON o usá el árbol principal.\n"
+                "Luego pensá en un elemento y respondé Sí o No.",
             font=("Arial", 12)
         )
         instrucciones.pack(pady=10)
@@ -273,7 +273,7 @@ class InterfazJuego:
         # pide la respuesta correcta
         etiqueta_respuesta = tk.Label(
             self.ventana,
-            text="¿Cuál era el país correcto?"
+            text="¿Cuál era la respuesta correcta?"
         )
         etiqueta_respuesta.pack(pady=5)
 
@@ -284,7 +284,7 @@ class InterfazJuego:
         # pide la nueva pregunta
         etiqueta_pregunta = tk.Label(
             self.ventana,
-            text="Escribí una pregunta que diferencie ambos países:"
+            text="Escribí una pregunta que diferencie ambas respuestas:"
         )
         etiqueta_pregunta.pack(pady=5)
 
@@ -295,7 +295,7 @@ class InterfazJuego:
         # pregunta si para la respuesta correcta seria si o no
         etiqueta_si_no = tk.Label(
             self.ventana,
-            text="Para el país correcto, la respuesta a esa pregunta sería:"
+            text="Para la respuesta correcta, la respuesta a esa pregunta sería:"
         )
         etiqueta_si_no.pack(pady=5)
 
@@ -352,7 +352,7 @@ class InterfazJuego:
         if respuesta_correcta.strip() == "":
             messagebox.showwarning(
                 "Dato faltante",
-                "Debe escribir el país correcto."
+                "Debe escribir la respuesta correcta."
             )
             return
 
