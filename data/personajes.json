@@ -1,0 +1,84 @@
+{
+    "tipo": "pregunta",
+    "texto": "¿Es de videojuegos?",
+    "si": {
+        "tipo": "pregunta",
+        "texto": "¿Es de nintendo?",
+        "si": {
+            "tipo": "pregunta",
+            "texto": "¿Usa gorra roja?",
+            "si": {
+                "tipo": "respuesta",
+                "texto": "mario"
+            },
+            "no": {
+                "tipo": "respuesta",
+                "texto": "pikachu"
+            }
+        },
+        "no": {
+            "tipo": "pregunta",
+            "texto": "¿Es azul?",
+            "si": {
+                "tipo": "respuesta",
+                "texto": "sonic"
+            },
+            "no": {
+                "tipo": "respuesta",
+                "texto": "kratos"
+            }
+        }
+    },
+    "no": {
+        "tipo": "pregunta",
+        "texto": "¿Es superheroe?",
+        "si": {
+            "tipo": "pregunta",
+            "texto": "¿Es de marvel?",
+            "si": {
+                "tipo": "respuesta",
+                "texto": "spider-man"
+            },
+            "no": {
+                "tipo": "pregunta",
+                "texto": "¿Usa capa negra?",
+                "si": {
+                    "tipo": "respuesta",
+                    "texto": "batman"
+                },
+                "no": {
+                    "tipo": "respuesta",
+                    "texto": "superman"
+                }
+            }
+        },
+        "no": {
+            "tipo": "pregunta",
+            "texto": "¿Es de una pelicula animada?",
+            "si": {
+                "tipo": "pregunta",
+                "texto": "¿Es verde?",
+                "si": {
+                    "tipo": "respuesta",
+                    "texto": "shrek"
+                },
+                "no": {
+                    "tipo": "respuesta",
+                    "texto": "mickey mouse"
+                }
+            },
+            "no": {
+                "tipo": "pregunta",
+                "texto": "¿Es villano?",
+                "si": {
+                    "tipo": "respuesta",
+                    "texto": "darth vader"
+                },
+                "no": {
+                    "tipo": "respuesta",
+                    "texto": "harry potter"
+                }
+            }
+        }
+    }
+}

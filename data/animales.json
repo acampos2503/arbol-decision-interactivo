@@ -1,0 +1,92 @@
+{
+    "tipo": "pregunta",
+    "texto": "¿Es domestico?",
+    "si": {
+        "tipo": "pregunta",
+        "texto": "¿Ladra?",
+        "si": {
+            "tipo": "respuesta",
+            "texto": "perro"
+        },
+        "no": {
+            "tipo": "pregunta",
+            "texto": "¿Maulla?",
+            "si": {
+                "tipo": "respuesta",
+                "texto": "gato"
+            },
+            "no": {
+                "tipo": "pregunta",
+                "texto": "¿Tiene orejas largas?",
+                "si": {
+                    "tipo": "respuesta",
+                    "texto": "conejo"
+                },
+                "no": {
+                    "tipo": "respuesta",
+                    "texto": "hamster"
+                }
+            }
+        }
+    },
+    "no": {
+        "tipo": "pregunta",
+        "texto": "¿Vive en el agua?",
+        "si": {
+            "tipo": "pregunta",
+            "texto": "¿Es mamifero?",
+            "si": {
+                "tipo": "respuesta",
+                "texto": "delfin"
+            },
+            "no": {
+                "tipo": "pregunta",
+                "texto": "¿Es peligroso?",
+                "si": {
+                    "tipo": "respuesta",
+                    "texto": "tiburon"
+                },
+                "no": {
+                    "tipo": "respuesta",
+                    "texto": "pez payaso"
+                }
+            }
+        },
+        "no": {
+            "tipo": "pregunta",
+            "texto": "¿Puede volar?",
+            "si": {
+                "tipo": "pregunta",
+                "texto": "¿Es un ave grande?",
+                "si": {
+                    "tipo": "respuesta",
+                    "texto": "aguila"
+                },
+                "no": {
+                    "tipo": "respuesta",
+                    "texto": "loro"
+                }
+            },
+            "no": {
+                "tipo": "pregunta",
+                "texto": "¿Es muy grande?",
+                "si": {
+                    "tipo": "respuesta",
+                    "texto": "elefante"
+                },
+                "no": {
+                    "tipo": "pregunta",
+                    "texto": "¿Es venenoso?",
+                    "si": {
+                        "tipo": "respuesta",
+                        "texto": "serpiente"
+                    },
+                    "no": {
+                        "tipo": "respuesta",
+                        "texto": "leon"
+                    }
+                }
+            }
+        }
+    }
+}

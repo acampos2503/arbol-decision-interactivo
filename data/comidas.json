@@ -1,0 +1,84 @@
+{
+    "tipo": "pregunta",
+    "texto": "¿Es comida dulce?",
+    "si": {
+        "tipo": "pregunta",
+        "texto": "¿Es fria?",
+        "si": {
+            "tipo": "respuesta",
+            "texto": "helado"
+        },
+        "no": {
+            "tipo": "pregunta",
+            "texto": "¿Tiene chocolate?",
+            "si": {
+                "tipo": "respuesta",
+                "texto": "brownie"
+            },
+            "no": {
+                "tipo": "pregunta",
+                "texto": "¿Es redondo?",
+                "si": {
+                    "tipo": "respuesta",
+                    "texto": "donut"
+                },
+                "no": {
+                    "tipo": "respuesta",
+                    "texto": "queque"
+                }
+            }
+        }
+    },
+    "no": {
+        "tipo": "pregunta",
+        "texto": "¿Tiene arroz?",
+        "si": {
+            "tipo": "pregunta",
+            "texto": "¿Es tipica de costa rica?",
+            "si": {
+                "tipo": "respuesta",
+                "texto": "gallo pinto"
+            },
+            "no": {
+                "tipo": "respuesta",
+                "texto": "arroz con pollo"
+            }
+        },
+        "no": {
+            "tipo": "pregunta",
+            "texto": "¿Es comida rapida?",
+            "si": {
+                "tipo": "pregunta",
+                "texto": "¿Tiene pan?",
+                "si": {
+                    "tipo": "respuesta",
+                    "texto": "hamburguesa"
+                },
+                "no": {
+                    "tipo": "respuesta",
+                    "texto": "pizza"
+                }
+            },
+            "no": {
+                "tipo": "pregunta",
+                "texto": "¿Es de origen japones?",
+                "si": {
+                    "tipo": "respuesta",
+                    "texto": "sushi"
+                },
+                "no": {
+                    "tipo": "pregunta",
+                    "texto": "¿Tiene pasta?",
+                    "si": {
+                        "tipo": "respuesta",
+                        "texto": "pasta"
+                    },
+                    "no": {
+                        "tipo": "respuesta",
+                        "texto": "ensalada"
+                    }
+                }
+            }
+        }
+    }
+}

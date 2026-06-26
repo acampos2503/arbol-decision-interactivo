@@ -1,0 +1,84 @@
+{
+    "tipo": "pregunta",
+    "texto": "¿Se juega con pelota?",
+    "si": {
+        "tipo": "pregunta",
+        "texto": "¿Es deporte de equipo?",
+        "si": {
+            "tipo": "pregunta",
+            "texto": "¿Se juega con los pies?",
+            "si": {
+                "tipo": "respuesta",
+                "texto": "futbol"
+            },
+            "no": {
+                "tipo": "pregunta",
+                "texto": "¿Se juega con las manos?",
+                "si": {
+                    "tipo": "respuesta",
+                    "texto": "baloncesto"
+                },
+                "no": {
+                    "tipo": "respuesta",
+                    "texto": "voleibol"
+                }
+            }
+        },
+        "no": {
+            "tipo": "pregunta",
+            "texto": "¿Usa raqueta?",
+            "si": {
+                "tipo": "respuesta",
+                "texto": "tenis"
+            },
+            "no": {
+                "tipo": "respuesta",
+                "texto": "golf"
+            }
+        }
+    },
+    "no": {
+        "tipo": "pregunta",
+        "texto": "¿Se practica en el agua?",
+        "si": {
+            "tipo": "pregunta",
+            "texto": "¿Se practica en el mar?",
+            "si": {
+                "tipo": "respuesta",
+                "texto": "surf"
+            },
+            "no": {
+                "tipo": "respuesta",
+                "texto": "natacion"
+            }
+        },
+        "no": {
+            "tipo": "pregunta",
+            "texto": "¿Es de combate?",
+            "si": {
+                "tipo": "respuesta",
+                "texto": "boxeo"
+            },
+            "no": {
+                "tipo": "pregunta",
+                "texto": "¿Usa bicicleta?",
+                "si": {
+                    "tipo": "respuesta",
+                    "texto": "ciclismo"
+                },
+                "no": {
+                    "tipo": "pregunta",
+                    "texto": "¿Se basa en correr?",
+                    "si": {
+                        "tipo": "respuesta",
+                        "texto": "atletismo"
+                    },
+                    "no": {
+                        "tipo": "respuesta",
+                        "texto": "gimnasia"
+                    }
+                }
+            }
+        }
+    }
+}
